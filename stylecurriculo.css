@@ -1,0 +1,34 @@
+
+body{
+    font-family: Verdana, Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
+}
+h1{
+    color: brown;
+    background-color: rgb(221, 199, 127);
+    text-align: center;
+    font-size: 46px;
+
+}
+h2{
+    color: red;
+    background-color: rgb(243, 165, 165);
+    font-size: 36px;
+    padding: 10px;
+    border-bottom: red solid 3px;
+
+}
+a{
+    color: blue;
+    text-decoration: none;
+}a:hover{text-decoration: underline;}
+li{
+    margin-left: -24px;
+}
+.letraMenor{font-size: 15px;}
+hr{
+    width: 1280px;
+    margin-left: -90px;
+    margin-right: -150px;
+}
