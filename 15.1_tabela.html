@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        th{
+            background: #ccc;
+            border: 1px solid chocolate;
+            padding: 15px;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }td:hover{
+            color: aquamarine;
+            background: rgb(44, 29, 29);
+            transition: .5s;
+        }
+        table{
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            background: beige;
+        }
+        tfoot{
+            text-align: center;
+            
+        }
+    </style>
+    <title>tabelas</title>
+</head>
+    <body>
+        <table>
+            <caption><h1> Tabela de preço de custos</h1></caption>
+            <!--cabeçalho-->
+            <thead>
+                <tr>
+                    <th>Área</th>
+                    <th>Custo</th>
+                    <th>Investimento</th>                    
+                </tr>
+            </thead>
+             <!--rodapé-->
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        Valores sujeitos a alterações sem prévio aviso
+                    </td>
+                </tr>
+            </tfoot>
+             <!--corpo-->
+            <tbody>
+                <tr>
+                    <td rowspan="3">Design</td>
+                    <td>InDesign</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+           
+                <tr>
+
+                    <td>Photoshop</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+           
+                <tr>
+                        
+                    <td>Illustrator</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4">Development</td>
+                    <td>HTML</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+                <tr>
+                    
+                    <td>CSS</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+                <tr>
+                    
+                    <td>JavaScript</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+                <tr>
+                    
+                    <td>PHP</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+           </tbody>
+        </table>
+        
+    </body>
+</html>

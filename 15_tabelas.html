@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Tabelas</title>
+    <style>
+        body{
+            font-size: 20px;
+            font-family: sans-serif;
+            margin: 15px;
+            padding: 15px;
+        }.bordas{border: 1px solid red;}
+    </style>
+</head>
+    <body>
+        <h1>Tabelas</h1>
+        <table>
+            <tr><!--COLUNAS-->
+                <td>1A</td> <td>1B</td> <td>1C</td>
+            </tr>
+            <tr>
+                <td>2A</td><td>2B</td><td>2c</td><!--LINHAS-->
+            </tr>
+            <tr>
+                <td>3A</td><td>3B</td><td>3C</td>
+            </tr>
+        </table>
+        
+        <hr>
+        <h2>Tag para mesclar linhas de tabelas é "colspan"</h2>
+        <table>
+            <tr><!--Tag para mesclar linhas "COLSPAN"-->
+                <td colspan="2">1A</td> <td>1C</td>
+            </tr>
+            <tr>
+                <td>2A</td><td>2B</td><td>2c</td><!--LINHAS-->
+            </tr>
+            <tr>
+                <td>3A</td><td>3B</td><td>3C</td>
+            </tr>
+        </table>
+
+        <hr>
+        <h2>Tag para mesclar colunas de tabelas é "rowspan"</h2>
+        <table>
+            <tr><!--Tag para mesclar colunas ""-->
+                <td rowspan="2">1A</td> <td>1B</td> <td>1C</td>
+            </tr>
+            <tr>
+                <td>2B</td><td>2c</td><!--LINHAS-->
+            </tr>
+            <tr>
+                <td>3A</td><td>3B</td><td>3C</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>Tag com semantica para tabela com header e body</h2>
+        <table class="bordas">
+            <thead>
+                <tr>
+                    <th>1A</th> <th>1B</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>2A</td> <td>2B</td>
+                </tr>
+                <tr>
+                    <td>3A</td> <td>3B</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>

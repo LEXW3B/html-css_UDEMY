@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 50px;
+            padding: 0;
+        }li ul{
+            height: 0;
+            overflow: hidden;
+        }li:hover{
+            background-color: #ccc;
+        }li:hover ul {
+            height: 50px;
+            transition: height 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <nav>
+                <ul>
+                    <li>Item 1</li> 
+                    <li>Item 2
+                        <ul>
+                            <li>Item 2.1</li>
+                            <li>Item 2.2</li>
+                        </ul>
+                    </li> 
+                    <li>Item 3</li>
+                    <li>Item 4</li>                  
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <hr>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de Marcação de Hipertexto</dd>
+
+        <dt>CSS</dt>
+        <dd>Linguagem para Criação de folhas de Estilos</dd>
+        
+    </dl>
+
+    <hr>
+
+    <dl>
+        <dt>WWW</dt>
+        <dt>Internet</dt>
+        <dd>rede mundial de computadores</dd>
+
+        <dt>JavaScript</dt>
+        <dd>linguagen script para internet</dd>
+        <dd>script para rodar no browser</dd>
+    </dl>
+    
+</body>
+</html>
