@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="AlexandreESL">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes-filhos</title>
+    <style>
+        div p:nth-of-type(3){
+            color: red;
+        }
+        .destaque{
+            background: #ccc;
+        }
+        .destaque:nth-of-type(1){
+            color: green;
+            background: yellow;
+        }
+        p:last-child{
+            text-align: center;
+        }
+    </style>
+</head>
+    <body>
+
+        <div>
+            <p class="destaque">meu paragrafo 01</p>
+            <p class="destaque">meu paragrafo 02</p>
+            <hr>
+            <p>meu paragrafo 01</p>
+            <p>meu paragrafo 02</p>
+            <hr>
+            <p class="destaque">meu paragrafo 01</p>
+            <p>meu paragrafo 02</p>
+          
+        </div>
+        
+    </body>
+</html>
