@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="AlexandreESL">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transforms</title>
+    <style>
+        .div1{
+            width: 150px;
+            height: 50px;
+            background: red;
+            transform: translate(50%, 50%);
+        }
+        .div2{
+            width: 150px;
+            height: 50px;
+            background: blue;
+            position: relative;
+            left: 50%;            
+        }
+        .div3{
+            width: 50%;
+            overflow: hidden; 
+            border: solid 2px black;           
+        }
+        .div3-interna{
+            background: yellow;
+            transform: translateX(20%);
+        }
+        .div4{
+            width: 50%;
+            overflow: hidden; 
+            border: solid 2px black;           
+        }
+        .div4-interna{
+            background: yellow;
+            transform: rotate(-25deg);
+        }
+        .div5{
+            width: 50%;
+            overflow: hidden; 
+            border: solid 2px black;           
+        }
+        .div5-interna{
+            background: yellow;
+            transform: rotate(10deg);
+            transform-origin: left top;
+        }
+        .div6{
+            width: 50%;
+            overflow: hidden; 
+            border: solid 2px black;           
+        }
+        .div6-interna{
+            background: yellow;
+            transform: rotate(30deg) translate(50px);
+        }
+        .div7{
+            width: 50%;
+            overflow: hidden; 
+            border: solid 2px black;           
+        }
+        .div7-interna{
+            background: yellow;
+            transform: translate(50px) rotate(30deg);
+        }
+        .div8{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transform: skew(-30deg, 50deg);/*distorce a imagem*/
+        }
+        .div9{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            transform: scale(.5) translateX(50%);
+            transition: transform .5s;
+        }.div9:hover{
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <hr>
+    <div class="div3">
+        <div class="div3-interna">conterudo qualquer</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quidem harum animi temporibus autem cumque itaque nobis odit? Aliquam explicabo doloribus laborum ea architecto sed, nulla quam veritatis nostrum! Nesciunt.</p>
+    </div>
+    <hr>
+    <div class="div4">
+        <div class="div4-interna">conterudo qualquer</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quidem harum animi temporibus autem cumque itaque nobis odit? Aliquam explicabo doloribus laborum ea architecto sed, nulla quam veritatis nostrum! Nesciunt.</p>
+    </div>
+    <hr>
+    <div class="div5">
+        <div class="div5-interna">conterudo qualquer</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quidem harum animi temporibus autem cumque itaque nobis odit? Aliquam explicabo doloribus laborum ea architecto sed, nulla quam veritatis nostrum! Nesciunt.</p>
+    </div>
+
+    <hr>
+    <div class="div7">
+        <div class="div6-interna">conterudo qualquer</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quidem harum animi temporibus autem cumque itaque nobis odit? Aliquam explicabo doloribus laborum ea architecto sed, nulla quam veritatis nostrum! Nesciunt.</p>
+    </div>
+    <hr>
+    <div class="div7">
+        <div class="div6-interna">conterudo qualquer</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quidem harum animi temporibus autem cumque itaque nobis odit? Aliquam explicabo doloribus laborum ea architecto sed, nulla quam veritatis nostrum! Nesciunt.</p>
+    </div>
+    <hr>
+    <div class="div8">div8</div>
+    <br><br><br><br>
+    <div class="div9">div9</div>
+    <br><br><br><br>
+</body>
+</html>
