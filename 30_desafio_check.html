@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="AlexandreESL">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio check</title>
+    <style>
+       body{
+           font-family: sans-serif;
+       }
+       label{
+           margin-right: 25px;
+       }
+       label span{/*para fazer o caminho da bola deslizante*/
+           display: inline-block;
+           width: 60px;
+           height: 30px;
+           background: #ccc;
+           border-radius: 15px;
+       }
+       label span::before{/*para fazer a bola deslizante*/
+           content: "";
+           display: block;
+           background: #eee;
+           width: 20px;
+           height: 20px;
+           border-radius: 50%;
+           margin: 5px;
+           transition: all .2s ease-in-out;
+       }
+       label input:checked +span::before{/*isso é o que faz a bola correr*/
+        transform: translateX(30px);
+        background: red;           
+       }
+       label input:focus + span{
+           box-shadow: 0 0 0 2px red;
+       }
+       input{
+           opacity: 0;
+           width: 1px;
+           height: 1px;
+           overflow: hidden;
+       }
+    </style>
+</head>
+    <body>
+        <h1>estrutura basica</h1>
+
+        <label>
+            <input type="checkbox"><span></span>Esporte
+        </label>
+        <label>
+            <input type="checkbox"><span></span>Política
+        </label>
+        <label>
+            <input type="checkbox"><span></span>Educação
+        </label>
+        
+    </body>
+</html>
