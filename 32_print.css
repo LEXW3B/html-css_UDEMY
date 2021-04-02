@@ -1,0 +1,11 @@
+/*tudo isso e como vai aparecer na impressão*/
+body{
+    font-family: serif;
+    font-size: 16px;
+    color: black;
+}
+a::after{/*isso manda um link para a impressão*/
+    content: "["attr(href)"]";
+    display: inline-block;
+    margin: 0 10px;
+}
