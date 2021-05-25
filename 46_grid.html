@@ -25,24 +25,33 @@
                 grid-template-columns: repeat(3, 1fr);/*define colunas*/
                 grid-template-rows: 100px 50px 1fr 50px;/*header, nav, espaço do conteudo e footer(rodapé)*/
                 grid-gap: 20px;/*define espaçamento entre as colunas e linhas*/
+
+                grid-template-areas: 
+                    "header header header"
+                    "nav    nav    aside"
+                    "main   main   aside"
+                    "footer footer aside"
+                ;
             }
             /*posicionamento dos elementos*/
             .header{
-                grid-column: 1 / -1;
+                /*grid-column: 1 / -1;*/
+                grid-area: header;
             }.nav{
-                grid-column: 1 / 3;
+                /*grid-column: 1 / 3;*/
+                grid-area: nav;
             }.aside{
-                grid-row: 2 / -1;
-                grid-column: 3 / 4;
-                z-index: 1;/*se quiser sobrepor o aside na frente do footer*/
+                /*grid-row: 2 / -1;
+                grid-column: 3 / 4;*/
+                grid-area: aside;
             }.main{
-                grid-column: 1 / 3;
+                /*grid-column: 1 / 3;*/
                 min-height: 200px;
+                grid-area: main;
             }.footer{
-                grid-column: 1 / -1;
-                grid-row: 4 / 5;/*esse mesclou o footer com o aside*/
-                background: red;
-                background: rgba(255, 0, 0, .5);/*so para mostrar a mescla*/
+                /*grid-column: 1 / 3;
+                grid-row: 4 / 5;esse mesclou o footer com o aside*/
+                grid-area: footer;
             }
             
         </style>
